@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Cat Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Random Cat Gallery</h1>
+        
+        <div class="controls">
+            <div class="filter">
+                <label for="breed-select">Filter by Breed:</label>
+                <select id="breed-select">
+                    <option value="">All Breeds</option>
+                    <option value="beng">Bengal</option>
+                    <option value="pers">Persian</option>
+                    <option value="siam">Siamese</option>
+                    <option value="ragd">Ragdoll</option>
+                    <option value="abys">Abyssinian</option>
+                </select>
+            </div>
+            <button id="load-more">Load More Cats</button>
+        </div>
+        <div id="loading" class="loading">Loading cats...</div>
+        <div id="error" class="error" style="display: none"></div>
+        
+        <div id="gallery" class="gallery"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
